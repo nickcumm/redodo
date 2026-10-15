@@ -11,14 +11,13 @@ a.btn{background:#7896be;color:#fff}small{display:block;margin-top:24px;opacity:
 <p>Dodo Returns ($REDODO): extinct, then back. Inspired by the de-extinction news (TIME: "AI Is Helping Bring Back the Dodo" about Colossal Biosciences). Our chubby dodo got 400 years off and came back with sunglasses. This is a meme coin for fun only. No roadmap, no utility, no financial value promised. Extinct. Then back.</p>
 <div class="ca" id="ca">CA: coming at launch</div>
 <button id="copy">Copy</button>
-<button id="music" aria-pressed="false">🎵 Play the dodo song</button><audio id="song" loop preload="none" src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Monkeys_Spinning_Monkeys_%28ISRC_USUAN1400011%29.mp3"></audio>
+<p style="font-weight:800;font-size:1.2rem;margin:16px 0 6px">🎵 Play Nick Lor Rise</p>
+<iframe width="320" height="180" style="max-width:100%;border:0;border-radius:12px" src="https://www.youtube-nocookie.com/embed/FvKgQfT8ocI" title="Still Learning - Nick Lor Rise" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen loading="lazy"></iframe>
 <a class="btn" href="https://pump.fun" target="_blank" rel="noopener">Buy (pump.fun - link at launch)</a>
 <small>Disclaimer: $REDODO is a meme coin with no intrinsic value, no utility and no expectation of financial return. Not financial advice. Not affiliated with TIME or Colossal Biosciences. Crypto is risky; only spend what you can afford to lose.</small>
-<small>Music: "Monkeys Spinning Monkeys" Kevin MacLeod (incompetech.com), licensed under CC BY 4.0 (<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">creativecommons.org/licenses/by/4.0</a>)</small>
+<small>Music by Nick Lor Rise</small>
 </main><script>
 document.getElementById('copy').onclick=async e=>{const t=document.getElementById('ca').textContent.replace(/^CA:\s*/,'');
 try{await navigator.clipboard.writeText(t)}catch(_){const a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();document.execCommand('copy');a.remove()}
 e.target.textContent='Copied!';setTimeout(()=>e.target.textContent='Copy',1500)};
-const m=document.getElementById('music'),au=document.getElementById('song');
-m.onclick=()=>{if(au.paused){au.play().then(()=>{m.textContent='🔇 Pause the dodo song'}).catch(()=>{})}else{au.pause();m.textContent='🎵 Play the dodo song'}};
 </script></body></html>
